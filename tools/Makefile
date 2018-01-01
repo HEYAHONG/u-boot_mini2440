@@ -143,7 +143,7 @@ $(obj)img2srec$(SFX):	$(obj)img2srec.o
 		$(CC) $(CFLAGS) $(HOST_LDFLAGS) -o $@ $^
 		$(STRIP) $@
 
-$(obj)mkimage$(SFX):	$(obj)mkimage.o $(obj)crc32.o $(obj)image.o $(obj)md5.o $(obj)sha1.o $(LIBFDT_OBJ_FILES)
+$(obj)mkimage$(SFX):	$(obj)mkimage.o  $(obj)crc32.o $(obj)image.o $(obj)md5.o $(obj)sha1.o $(LIBFDT_OBJ_FILES) 
 		$(CC) $(CFLAGS) $(HOST_LDFLAGS) -o $@ $^
 		$(STRIP) $@
 

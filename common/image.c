@@ -371,7 +371,7 @@ inline void image_print_contents (image_header_t *hdr)
 	__image_print_contents (hdr, "   ");
 }
 
-inline void image_print_contents_noindent (image_header_t *hdr)
+void image_print_contents_noindent (image_header_t *hdr)
 {
 	__image_print_contents (hdr, "");
 }
@@ -1366,7 +1366,7 @@ inline void fit_print_contents (const void *fit)
 	__fit_print_contents (fit, "   ");
 }
 
-inline void fit_print_contents_noindent (const void *fit)
+void fit_print_contents_noindent (const void *fit)
 {
 	__fit_print_contents (fit, "");
 }
